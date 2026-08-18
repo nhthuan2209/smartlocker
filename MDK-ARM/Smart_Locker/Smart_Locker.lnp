@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"smart_locker\startup_stm32f103xb.o"
+"smart_locker\fonts.o"
+"smart_locker\rc522.o"
+"smart_locker\st7789.o"
+"smart_locker\main.o"
+"smart_locker\stm32f1xx_it.o"
+"smart_locker\stm32f1xx_hal_msp.o"
+"smart_locker\stm32f1xx_hal_gpio_ex.o"
+"smart_locker\stm32f1xx_hal_rtc.o"
+"smart_locker\stm32f1xx_hal_rtc_ex.o"
+"smart_locker\stm32f1xx_hal.o"
+"smart_locker\stm32f1xx_hal_rcc.o"
+"smart_locker\stm32f1xx_hal_rcc_ex.o"
+"smart_locker\stm32f1xx_hal_gpio.o"
+"smart_locker\stm32f1xx_hal_dma.o"
+"smart_locker\stm32f1xx_hal_cortex.o"
+"smart_locker\stm32f1xx_hal_pwr.o"
+"smart_locker\stm32f1xx_hal_flash.o"
+"smart_locker\stm32f1xx_hal_flash_ex.o"
+"smart_locker\stm32f1xx_hal_exti.o"
+"smart_locker\stm32f1xx_hal_spi.o"
+"smart_locker\system_stm32f1xx.o"
+--strict --scatter "Smart_Locker\Smart_Locker.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Smart_Locker.map" -o Smart_Locker\Smart_Locker.axf
